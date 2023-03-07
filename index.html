@@ -15,13 +15,13 @@
     <a-scene mindar-image="imageTargetSrc: ./targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
         <a-assets>
           <img id="catioro1" src="catioro.jpg"></img>
-          <img id="catioro2" src="catioro2.webp"></img>
+          <gif id="catioro2" src="catioro2.webp"></gif>
         </a-assets>
   
         <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
   
         <a-entity mindar-image-target="targetIndex: 1">
-          <a-plane rotation="0 0 0 " position="0 -0.25 0" scale="1 1 1" src="#catioro1"></a-plane>
+          <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="1 1 1" src="#catioro1" animation-mixer>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 0">
           <a-plane rotation="0 0 0 " position="0 -0.25 0" scale="1 1 1" src="#catioro2"></a-plane>
