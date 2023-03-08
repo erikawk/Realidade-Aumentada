@@ -29,7 +29,10 @@
       </a-scene>
 
       <script>
-        console.log(document.getElementById('1'))
+        document.getElementById('1')
+        .addEventListener('targetFound', (e) => {
+            alert("oi"); 
+        })
       </script>
 </body>
 
